@@ -48,8 +48,7 @@ class ViewController: UIViewController {
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(viewMoved))
         blueView.addGestureRecognizer(panGestureRecognizer)
-        
-        // Do any additional setup after loading the view.
+  
     }
     @objc func viewMoved (_ sender : UIPanGestureRecognizer){
        let translation = sender.translation(in:view)
